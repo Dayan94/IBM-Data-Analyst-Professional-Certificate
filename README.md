@@ -56,3 +56,54 @@ The final capstone project focused on analyzing technology usage survey data thr
 ---
 
 **Note**: This repository is a portfolio of projects and code files developed during the course and showcases skills gained in data analysis, visualization, and storytelling through data.
+
+---
+
+## Large File Notice
+
+This repository uses **Git LFS** to track large files, including:
+
+1. `Course-8-Data-Visualization-with-Python/Module-4/Lab-Plotly-Basics-Scatter-Line-Bar-Bubble-Histogram-Pie-Sunburst.ipynb`
+
+If you encounter issues pulling these files due to Git LFS limitations, follow the instructions below to download them programmatically using the Kaggle API.
+
+## Downloading Files with Kaggle API
+
+### Prerequisites
+
+1. Create an API token from your Kaggle account:
+   - Log in to Kaggle.
+   - Go to your account settings.
+   - Click **Create New API Token** to download `kaggle.json`.
+2. Place `kaggle.json` in the `~/.kaggle/` directory (for Unix-based systems) or `%USERPROFILE%\.kaggle\` (for Windows).
+3. Ensure proper permissions for the file:
+   ```bash
+   chmod 600 ~/.kaggle/kaggle.json
+   ```
+
+### Downloading Files
+
+Use the following Python code to download the files programmatically:
+
+#### Download `Lab-Plotly-Basics-Scatter-Line-Bar-Bubble-Histogram-Pie-Sunburst.ipynb`
+
+```python
+import os
+from kaggle.api.kaggle_api_extended import KaggleApi
+
+file_name = "Lab-Plotly-Basics-Scatter-Line-Bar-Bubble-Histogram-Pie-Sunburst.ipynb"
+dataset_name = "mdabudayansiddik/basic-plotly-charts"
+
+if not os.path.exists(file_name):
+    print(f"Downloading {file_name} from Kaggle...")
+    api = KaggleApi()
+    api.authenticate()
+    api.dataset_download_file(dataset_name, file_name, path=".")
+    print(f"{file_name} downloaded.")
+else:
+    print(f"{file_name} already exists.")
+```
+
+## Disclaimer
+
+To download files using the Kaggle API, users must use their **own Kaggle username and API key**. Sharing personal API keys is not recommended for security reasons.
