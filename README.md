@@ -49,7 +49,7 @@ The final capstone project focused on analyzing technology usage survey data thr
 4. **Data Visualization**: Leveraged Looker Studio will create dashboards featuring bar charts, scatter plots, and word clouds to present key findings.  
 5. **Presentation**: Summarized the project insights in a PowerPoint presentation slide.  
 
-- **Explore the Looker Studio Dashboard [here](https://lookerstudio.google.com/reporting/ffb1044e-d9b8-4f72-9997-d56249e626a7)**
+- **Explore the Looker Studio Dashboard [here](https://datastudio.google.com/u/0/reporting/ffb1044e-d9b8-4f72-9997-d56249e626a7)**
 
 - **Explore the presentation slide [here](./Course-9-IBM-Data-Analyst-Capstone-Project/Module-6/Final-Capstone-Story-Dayan.pdf)**
 
